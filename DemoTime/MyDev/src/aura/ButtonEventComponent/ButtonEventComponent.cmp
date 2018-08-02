@@ -1,0 +1,8 @@
+<aura:component >
+	<aura:attribute name="text" type="String" default="Just a string..waiting for change" />
+    <input type="button" value="Flawed HTML Button" onclick="alert('This will not work')" />
+    <br/>
+    <input type="button" value="Hybrid HTML button" onclick="{!c.handleClick}" />
+    <br/>
+    <ui:button label="Framework button" press="{!c.handleClick}" />
+</aura:component>

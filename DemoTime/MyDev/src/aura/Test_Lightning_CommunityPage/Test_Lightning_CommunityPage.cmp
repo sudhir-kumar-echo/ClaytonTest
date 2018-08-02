@@ -1,0 +1,3 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	Sudhir is a SFDC Developer.
+</aura:component>

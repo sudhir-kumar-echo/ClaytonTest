@@ -1,0 +1,11 @@
+<aura:component >
+	{!$Browser.isTablet}
+    {!$Browser.isPhone}
+    {!$Browser.isAndroid}
+    {!$Browser.formFactor}
+    
+    {!$Locale.language}
+    {!$Locale.timezone}
+    {!$Locale.numberFormat}
+    {!$Locale.currencyFormat}
+</aura:component>

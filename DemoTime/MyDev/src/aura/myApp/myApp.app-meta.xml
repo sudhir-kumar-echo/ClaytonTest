@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>36.0</apiVersion>
+    <description>To test the code, you can put the notifier component and handler component in a container component. For example, you can put them in an app resource.</description>
+</AuraDefinitionBundle>

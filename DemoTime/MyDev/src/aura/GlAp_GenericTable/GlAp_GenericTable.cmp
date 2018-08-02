@@ -1,0 +1,32 @@
+<aura:component >
+    <aura:attribute name="fieldList" type="List" access="public"/>
+    <aura:attribute name="recordList" type="List" access="public"/>
+    <aura:attribute name="forceEditMode" type="boolean" access="public" default="false"/>
+    <aura:attribute name="showSelect"  type="boolean" default="true"/>
+    <aura:attribute name="selectHeader" type="string" default="Select"/> 
+    <aura:attribute name="tableName"  type="string" default="DefaultTable"/>
+    
+    <aura:handler name="rowClickEvent" event="c:GlAp_GenericListRowClickEvent" action="{!c.handleRowClickEvent}"/> 
+    
+    <table class="slds-table slds-table--bordered" style="table-layout: fixed; width:100%;">
+        <thead>
+            <tr class="slds-text-title--caps" >
+                <aura:if isTrue="{!v.showSelect}">  
+                    <th scope="col" style="width: 4.5rem;">
+                        <div  class="slds-truncate slds-cell-wrap" title="{!v.selectHeader}" >{!v.selectHeader}</div>
+                    </th>
+                </aura:if>
+                <aura:iteration items="{!v.fieldList}" var="fldItem" indexVar="Idx" >
+                    <th scope="col" class="{!'column' + Idx}" >
+                        <div  class="slds-truncate slds-cell-wrap" title="{!fldItem.fieldLabel}" >{!fldItem.fieldLabel}</div>
+                    </th>
+                </aura:iteration>
+            </tr>
+        </thead>  
+        <tbody>
+            <aura:iteration items="{!v.recordList}" var="record" >
+                <c:GlAp_GenericListRow aura:id="GenericRowItem" fieldList="{!v.fieldList}" record="{!record}" showSelect="{!v.showSelect}" forceEditMode="{!v.forceEditMode}" tableName="{!v.tableName}" />
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>

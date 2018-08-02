@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:registerEvent name="messageEvent" type="c:compMessage" />
+    <ui:button label="1" press="{!c.send}" />
+    <ui:button label="2" press="{!c.send}" />
+</aura:component>

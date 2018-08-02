@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>36.0</apiVersion>
+    <description>In this example, we’ll create a sender component with two buttons. When pressed, each button fires an event that communicates the button label, which is handled by a receiver component.</description>
+</AuraDefinitionBundle>

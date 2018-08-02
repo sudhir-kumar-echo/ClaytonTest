@@ -1,0 +1,18 @@
+<aura:component controller="DisplayCaseController">
+    <!--
+    <aura:attribute name="idCase" type="String" default="Case Id" />
+    <aura:attribute name="record" type="Case[]" default="Case record" />
+	-->
+    <aura:attribute name="record" type="Case" />
+    <!--
+    <ui:button label="Get Case Details" press="{!c.getCaseInfo}" />
+	<aura:iteration items="{!v.record}" var="oCase">
+    	{!oCase.Subject}
+        {!oCase.Description}
+        {!oCase.Status}
+    </aura:iteration>
+    -->
+    <p>{!v.record.Subject}</p>
+    <p>{!v.record.Description}</p>
+    <p>{!v.record.Status}</p>
+</aura:component>

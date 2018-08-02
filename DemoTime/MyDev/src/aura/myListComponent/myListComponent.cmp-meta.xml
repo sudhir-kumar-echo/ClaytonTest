@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>36.0</apiVersion>
+    <description>This example uses standard components such as aura:iteration and ui:button to retrieve a list of numbers from a client-side controller.</description>
+</AuraDefinitionBundle>

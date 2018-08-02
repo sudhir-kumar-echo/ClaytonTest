@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>36.0</apiVersion>
+    <description>trigger a server-call from a component. The following component contains a button that’s wired to a client-side controller echo action.</description>
+</AuraDefinitionBundle>

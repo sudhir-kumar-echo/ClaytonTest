@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="Street" type="String" default="Pratap Nagar" />
+    <aura:attribute name="City" type="String" default="Mayur Vihar Phase 1" />
+    <aura:attribute name="State" type="String" default="Delhi" />
+    <aura:attribute name="PostalCode" type="String" default="110091" />
+    {!v.Street}
+    {!v.City}
+    {!v.State}
+    {!v.PostalCode}
+</aura:component>
